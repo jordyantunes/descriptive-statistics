@@ -17,9 +17,9 @@ int main(int argc, char* argv[])
 	stats.sortVector();
 
 	cout.precision(2);
-	cout << "Num de classes : " << stats.classNum() << "\n";
-	cout << "Amplitude Total : " << stats.totalAmplitude() << "\n";
-	cout << "Intervalo de Classes : " << stats.classInterval() << "\n";
+	cout << "Num de classes : " << stats.getClassNum() << "\n";
+	cout << "Amplitude Total : " << stats.getTotalAmplitude() << "\n";
+	cout << "Intervalo de Classes : " << stats.getClassInterval() << "\n";
 
 	
 }
