@@ -1,6 +1,7 @@
 #ifndef STATISTICS
 #include <cmath>
 #include <vector>
+#include <map>
 
 #define STATISTICS
 
@@ -17,8 +18,13 @@ namespace statistics
 		
 		//
 		bool isUpdated;
+
+		map<double, int> map;
+		int size;
+
 	public:
-		vector<double> *v;
+		//vector<double> *v;
+
 		DescriptiveStatistics();
 		DescriptiveStatistics(int size);
 		~DescriptiveStatistics();
@@ -38,6 +44,13 @@ namespace statistics
 		int getClassNum();
 		double getTotalAmplitude();
 		double getClassInterval();
+		void setClassIsSet(bool val);
+
+		//other stats
+		int getFrequencyOfVal(double n);
+		int getFrequencyOfIndex(int n);
+
+		int getClassBegin(int n);
 	};
 }
 #endif
