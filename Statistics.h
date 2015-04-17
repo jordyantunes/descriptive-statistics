@@ -1,4 +1,4 @@
-#ifndef STATISTICS
+#ifndef statistics
 #include <cmath>
 #include <vector>
 #include <map>
@@ -19,7 +19,7 @@ namespace statistics
 		//
 		bool isUpdated;
 
-		map<double, int> map;
+		std::map<double, int> map;
 		int size;
 
 	public:
